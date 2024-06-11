@@ -1,0 +1,84 @@
+***LOW***
+***1
+# temperature_conversion.py
+
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+def celsius_to_kelvin(celsius):
+    return celsius + 273.15
+
+def kelvin_to_celsius(kelvin):
+    return kelvin - 273.15
+# temperature_program.py
+import temperature_conversion
+
+celsius = 30
+fahrenheit = temperature_conversion.celsius_to_fahrenheit(celsius)
+print(f"{celsius} Celsius is equal to {fahrenheit} Fahrenheit.")
+
+***2
+# currency_conversion.py
+
+def usd_to_eur(usd):
+    return usd * 0.82
+
+def eur_to_usd(eur):
+    return eur / 0.82
+# currency_program.py
+import currency_conversion
+
+usd_amount = 100
+eur_equivalent = currency_conversion.usd_to_eur(usd_amount)
+print(f"${usd_amount} is equal to {eur_equivalent} Euros.")
+
+***Medium***
+***3
+# arithmetic_operations.py
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "Error: Division by zero!"
+    return a / b
+# arithmetic_program.py
+import arithmetic_operations
+
+num1 = 10
+num2 = 5
+
+print("Addition:", arithmetic_operations.add(num1, num2))
+print("Subtraction:", arithmetic_operations.subtract(num1, num2))
+print("Multiplication:", arithmetic_operations.multiply(num1, num2))
+print("Division:", arithmetic_operations.divide(num1, num2))
+
+***High ***
+***4
+# conversion.py
+
+def decimal_to_binary(decimal):
+    return bin(decimal)[2:]
+
+def binary_to_decimal(binary):
+    return int(binary, 2)
+# binary_decimal_program.py
+import conversion
+
+decimal_num = 25
+binary_num = conversion.decimal_to_binary(decimal_num)
+print(f"Binary representation of {decimal_num} is {binary_num}.")
+
+binary_num = '11001'
+decimal_num = conversion.binary_to_decimal(binary_num)
+print(f"Decimal representation of {binary_num} is {decimal_num}.")
